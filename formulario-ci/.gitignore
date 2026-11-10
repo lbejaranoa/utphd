@@ -1,0 +1,58 @@
+gitignore
+# ##############################################################################
+# Angular - Salidas compiladas y cachés
+# ##############################################################################
+dist/
+/bazel-out/
+/out-tsc/
+/tmp/
+/coverage/
+/e2e/test-output/
+/.angular/
+.angular/
+
+# ##############################################################################
+# Node.js - Dependencias
+# ##############################################################################
+/node_modules/
+
+# ##############################################################################
+# Logs y analíticas de compilación
+# ##############################################################################
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.build-analytics
+
+# ##############################################################################
+# IDEs y editores de código (Opcional pero recomendado)
+# ##############################################################################
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+.history/
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# ##############################################################################
+# Variables de entorno y secretos (¡Muy importante!)
+# ##############################################################################
+.env
+.env.*
+src/environments/environment.prod.ts
+
+# ##############################################################################
+# Sistema operativo
+# ##############################################################################
+.DS_Store
+Thumbs.db

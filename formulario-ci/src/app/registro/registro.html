@@ -1,0 +1,37 @@
+<h1>Formulario de registro</h1>
+
+<form [formGroup]="formulario">
+
+  <div>
+    <label>Nombre</label>
+
+    <input
+      type="text"
+      formControlName="nombre">
+  </div>
+
+  <div>
+    <label>Correo</label>
+
+    <input
+      type="email"
+      formControlName="email">
+  </div>
+
+  <div>
+    <label>Contraseña</label>
+
+    <input
+      type="password"
+      formControlName="password">
+  </div>
+
+  <button
+    type="submit"
+    [disabled]="formulario.invalid">
+
+    Registrar
+
+  </button>
+
+</form>
